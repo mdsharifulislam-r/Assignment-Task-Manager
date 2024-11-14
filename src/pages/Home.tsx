@@ -6,7 +6,7 @@ import { TaskType } from "../types/Types";
 
 export default function Home() {
   const localData = JSON.parse(localStorage.getItem('taskData')||"")
-  const [taskData,setTaskData]=useState<TaskType[]>(localData??[])
+  const [taskData,setTaskData]=useState<TaskType[]>(localData?.length?localData:[])
   
   return (
     <div className="w-full bg-blue-100 min-h-screen">
