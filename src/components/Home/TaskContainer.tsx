@@ -7,7 +7,7 @@ import { successItem } from "../../helpers/successItem";
 
 
 export default function TaskContainer({taskData,setTaskData}:{taskData:TaskType[],setTaskData:React.Dispatch<React.SetStateAction<TaskType[]>>}) {
-  const localData:TaskType[] = JSON.parse(localStorage.getItem('taskData')||"")
+  const localData:TaskType[] = JSON.parse(localStorage.getItem('taskData')||"[]")
     const searchItem=(e:ChangeEvent<HTMLInputElement>)=>{
       importentToLow(localData)
  

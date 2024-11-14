@@ -8,7 +8,7 @@ export default function TaskItem({task,setTaskData}:{task:TaskType,setTaskData:R
     useEffect(()=>{
         setFormData(task)
     },[])
-    const localData:TaskType[] = JSON.parse(localStorage.getItem('taskData')||"")
+    const localData:TaskType[] = JSON.parse(localStorage.getItem('taskData')||"[]")
     const deleteTask = ()=>{
 
         setTaskData(()=>{
@@ -31,7 +31,7 @@ export default function TaskItem({task,setTaskData}:{task:TaskType,setTaskData:R
         })
         toast.success("Task Completed")
     }
-    
+
   return (
     <motion.tr initial={{opacity:0,translateY:4}} transition={{duration:0.6}} exit={{opacity:0,translateY:4}}  animate={{opacity:1,translateY:0}}  className="hover:bg-slate-50">
   

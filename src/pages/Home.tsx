@@ -5,7 +5,7 @@ import TaskForm from "../components/Home/TaskForm";
 import { TaskType } from "../types/Types";
 
 export default function Home() {
-  const localData = JSON.parse(localStorage.getItem('taskData')||"")
+  const localData = JSON.parse(localStorage.getItem('taskData')||"[]")
   const [taskData,setTaskData]=useState<TaskType[]>(localData?.length?localData:[])
   
   return (
