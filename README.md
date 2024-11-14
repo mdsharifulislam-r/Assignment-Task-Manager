@@ -12,6 +12,18 @@ This Task Manager application is built using React and TypeScript (or JavaScript
 - **Priority Setting**: Assign priority levels (e.g., Low, Medium, High) to tasks.
 - **Task Sorting**: Sort tasks by criteria like creation date, priority, or completion status.
 
+## Screenshots 
+### Main Interface
+![Task Manager Main UI](./screenshots/main.webp)
+
+### Adding a Task
+![Add Task](./screenshots/add_task.webp)
+
+### Sorting Options
+![Sorting Options](./screenshots/sorting.webp)
+
+### Searching Options
+![Sorting Options](./screenshots/search.webp)
 
 ## Setup and Installation
 To set up and run the project locally, follow these steps:
