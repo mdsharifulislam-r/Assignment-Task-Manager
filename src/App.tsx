@@ -1,12 +1,12 @@
 import { Toaster } from "react-hot-toast"
-
+import Home from "./pages/Home"
 
 function App() {
   
 
   return (
     <>
- <h1>Hello</h1>
+   <Home/>
    <Toaster position="top-center"/>
     </>
   )
